@@ -29,7 +29,7 @@ function Home() {
                                 whileTap={{ scale: 0.95 }}
                                 transition={{ duration: 0.1 }}
                                 className="text-base sm:text-xl border-2 border-white bg-slate-700 px-3 sm:px-5 py-1 rounded-full font-mono"
-                                onClick={() => window.open("https://www.google.com", "_blank")}
+                                onClick={() => window.open("https://drive.google.com/file/d/1OwjYLI9-e8PvqTuKj9wWiARymcH6_V3W/view?usp=sharing", "_blank")}
                             >
                                 Download Resume
                             </motion.button>
