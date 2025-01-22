@@ -3,6 +3,16 @@ import Button from './Button';
 
 function Projects() {
     const projects = [
+         {
+            name: 'Movie_app_React',
+            image: 'https://i.ibb.co/fx5TF4r/Movie-web-App.png',
+            description: 'A responsive movie web app built with React.js and Tailwind CSS, featuring a search bar, detailed movie info, trailers, recommendations, and platform availability. Powered by Redux and the TMDB API for a seamless user experience.',
+            links: [
+                { label: 'Github', url: 'https://github.com/adi522/Movie_Webapp' },
+                { label: 'Live', url: 'https://movie-webapp-gamma.vercel.app/' },
+            ],
+            skills: ["React", "Redux", "Javascript", "Tailwind CSS",]
+        },
         {
             name: 'Ochi.design',
             image: 'https://i.postimg.cc/gkzZZcjr/ochi-design.png',
