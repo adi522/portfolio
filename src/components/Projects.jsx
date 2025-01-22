@@ -14,7 +14,7 @@ function Projects() {
             skills: ["React", "Redux", "Javascript", "Tailwind CSS",]
         },
         {
-            name: 'Ochi.design',
+            name: 'Ochi.design Clone',
             image: 'https://i.postimg.cc/gkzZZcjr/ochi-design.png',
             description: 'Developed the user interface for the Ochi.design app clone using React and Tailwind CSS. Focused on building a dynamic design with clean, modern UI components and seamless user interactions.',
             links: [
