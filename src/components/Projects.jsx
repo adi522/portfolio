@@ -8,8 +8,8 @@ function Projects() {
             image: 'https://i.ibb.co/fx5TF4r/Movie-web-App.png',
             description: 'A dynamic movie web app built with React.js, showcasing detailed movie information (cast, ratings, genres, and runtime), integrated trailers, and personalized recommendations. Powered by Redux for state management and the TMDB API for rich movie data, it ensures a seamless and engaging user experience. Styled with Tailwind CSS.',
             links: [
-                { label: 'Github', url: 'https://github.com/adi522/Movie_Webapp' },
-                { label: 'Live', url: 'https://movie-webapp-gamma.vercel.app/' },
+                { label: 'Github', url: 'https://github.com/adi522/Movie' },
+                { label: 'Live', url: 'https://moviewebaditya1nagmal.netlify.app/popular' },
             ],
             skills: ["React", "Redux", "Javascript", "Tailwind CSS",]
         },
