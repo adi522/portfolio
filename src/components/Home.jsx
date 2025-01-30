@@ -40,7 +40,7 @@ function Home() {
                 <motion.div className="tilt-text pt-[8vh] sm:pt-[12vh] px-6 sm:px-14">
                     <h1 className="text-white uppercase text-[4vw] sm:text-[2vw] font-bold leading-relaxed sm:leading-10">
                         I am a <br />
-                        <motion.span className="font-serif text-3xl sm:text-5xl font-semibold block my-2 select-none hover:cursor-default">
+                        <motion.span className="font-serif text-2xl sm:text-5xl font-semibold block my-2 select-none hover:cursor-default">
                             {name.split('').map((elem, index) => (
                                 <motion.h1
                                     whileHover={{ rotate: "180deg" }}
