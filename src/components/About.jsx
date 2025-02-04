@@ -23,7 +23,7 @@ function About() {
                         transition={{ duration: 0.2 }}
                         onMouseOver={() => setHoveredSentenceIndex(index)}
                         onMouseOut={() => setHoveredSentenceIndex(null)}
-                        className="text-[2vw] md:text-2vw lg:text-3vw font-mono hover:cursor-pointer"
+                        className="text-[18px] lg:text-[30px] font-mono hover:cursor-pointer"
                     >
                         {sentence}.{' '}
                     </motion.p>
