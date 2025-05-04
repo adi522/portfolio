@@ -40,7 +40,7 @@ function Experience() {
                     transition={{ duration: 0.7 }}
                     viewport={{ once: true }}
                 >
-                    <h2 className="inline-block text-4xl sm:text-5xl md:text-6xl font-serif tracking-tight bg-gradient-to-r from-gray-800 to-gray-600 dark:from-white dark:to-gray-300 bg-clip-text text-transparent mb-4">
+                    <h2 className="text-[10vw] md:text-[6vw] lg:text-[5vw] xl:text-[4vw] font-serif tracking-tight bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent inline-block">
                         Experience
                     </h2>
                     <motion.div

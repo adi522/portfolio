@@ -37,29 +37,29 @@ function SkillCard({ name, icon, index }) {
                         bg-white dark:bg-gray-800 p-6 aspect-square md:aspect-auto md:h-[220px] lg:h-[250px] 
                         hover:shadow-xl transition-all duration-300`}
             initial={{ opacity: 0, y: 50 }}
-            whileInView={{ 
-                opacity: 1, 
+            whileInView={{
+                opacity: 1,
                 y: 0,
-                transition: { 
-                    type: 'spring', 
-                    stiffness: 100, 
-                    damping: 15, 
-                    delay: index * 0.1 
+                transition: {
+                    type: 'spring',
+                    stiffness: 100,
+                    damping: 15,
+                    delay: index * 0.1
                 }
             }}
             viewport={{ once: true, amount: 0.2 }}
-            whileHover={{ 
+            whileHover={{
                 y: -10,
-                transition: { 
-                    type: 'spring', 
-                    stiffness: 300, 
-                    damping: 15 
+                transition: {
+                    type: 'spring',
+                    stiffness: 300,
+                    damping: 15
                 }
             }}
         >
             <div className={`absolute bottom-0 left-0 w-full h-1.5 bg-gradient-to-r ${getSkillColor(name)}`}></div>
-            
-            <motion.div 
+
+            <motion.div
                 className={`absolute -bottom-10 left-0 right-0 mx-auto w-48 h-48 rounded-full opacity-10 bg-gradient-to-tr ${getSkillColor(name)}`}
                 initial={{ scale: 0.8 }}
                 whileHover={{ scale: 1.2 }}
@@ -72,14 +72,14 @@ function SkillCard({ name, icon, index }) {
                 whileHover={{ scale: 1.05 }}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
-                <motion.div 
+                <motion.div
                     className={`${iconColors[name]} text-6xl sm:text-5xl md:text-6xl lg:text-7xl mb-4`}
                     animate={{ rotateY: [0, 360] }}
                     transition={{ duration: 3, repeat: Infinity, ease: "linear", repeatDelay: 2 }}
                 >
                     {icon}
                 </motion.div>
-                <motion.h3 
+                <motion.h3
                     className="font-sans text-lg sm:text-xl lg:text-2xl font-medium text-gray-800 dark:text-gray-100"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
@@ -87,9 +87,9 @@ function SkillCard({ name, icon, index }) {
                 >
                     {name}
                 </motion.h3>
-                
+
                 <div className="mt-3 w-32 h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
-                    <motion.div 
+                    <motion.div
                         className={`h-full bg-gradient-to-r ${getSkillColor(name)}`}
                         initial={{ width: 0 }}
                         whileInView={{ width: '90%' }}
@@ -114,17 +114,17 @@ function Skills() {
     return (
         <section id="skills" className="pb-20 px-4 sm:px-8 bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
             {/* Section header */}
-            <motion.div 
+            <motion.div
                 className="container mx-auto text-center mb-12 md:mb-16"
                 initial={{ opacity: 0, y: -20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7 }}
                 viewport={{ once: true }}
             >
-                <h2 className="inline-block text-4xl sm:text-5xl md:text-6xl font-serif tracking-tight bg-gradient-to-r from-gray-800 to-gray-600 dark:from-white dark:to-gray-300 bg-clip-text text-transparent mb-4">
+                <h2 className="text-[10vw] md:text-[6vw] lg:text-[5vw] xl:text-[4vw] font-serif tracking-tight bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent inline-block">
                     Technical Skills
                 </h2>
-                <motion.div 
+                <motion.div
                     className="h-1 w-24 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"
                     initial={{ width: 0 }}
                     whileInView={{ width: '6rem' }}
@@ -137,7 +137,7 @@ function Skills() {
             </motion.div>
 
             {/* Skills grid layout */}
-            <motion.div 
+            <motion.div
                 className="container mx-auto"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
@@ -146,18 +146,18 @@ function Skills() {
             >
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
                     {skills.map((skill, index) => (
-                        <SkillCard 
-                            key={skill.name} 
-                            name={skill.name} 
-                            icon={skill.icon} 
-                            index={index} 
+                        <SkillCard
+                            key={skill.name}
+                            name={skill.name}
+                            icon={skill.icon}
+                            index={index}
                         />
                     ))}
                 </div>
             </motion.div>
 
             {/* Additional section for skill categories */}
-            <motion.div 
+            <motion.div
                 className="container mx-auto mt-16 md:mt-24"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -170,7 +170,7 @@ function Skills() {
                         { title: 'Backend', count: 2, icon: "⚙️" },
                         { title: 'Database', count: 1, icon: "🗄️" }
                     ].map((category, index) => (
-                        <motion.div 
+                        <motion.div
                             key={category.title}
                             className="flex flex-col items-center text-center"
                             initial={{ opacity: 0, scale: 0.8 }}

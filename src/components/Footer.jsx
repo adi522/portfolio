@@ -65,11 +65,9 @@ function Footer() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
                 >
-                    <motion.h2
-                        className="text-3xl md:text-4xl font-serif bg-gradient-to-r from-gray-800 to-gray-600 dark:from-gray-200 dark:to-gray-400 bg-clip-text text-transparent"
-                    >
+                    <h2 className="text-[10vw] md:text-[6vw] lg:text-[5vw] xl:text-[4vw] font-serif tracking-tight bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent inline-block">
                         Get In Touch
-                    </motion.h2>
+                    </h2>
                     <motion.div
                         className="h-1 w-16 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mt-2"
                         initial={{ width: 0 }}
