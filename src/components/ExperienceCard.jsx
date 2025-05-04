@@ -2,15 +2,21 @@ import React from 'react';
 
 function ExperienceCard({ experience }) {
     return (
-        <div className="experience-card p-4 md:p-6 lg:p-8 m-4 md:m-6 lg:m-8 bg-white rounded-xl shadow-md">
-            <h2 className="text-xl md:text-2xl lg:text-3xl font-bold font-serif">{experience.name} | {experience.role}</h2>
-            <p className="text-lg md:text-xl lg:text-2xl font-medium font-mono italic">{experience.duration}</p>
-            <p className="text-lg md:text-xl lg:text-2xl font-mono">{experience.description}</p>
-            <h1 className="text-lg md:text-xl lg:text-2xl font-semibold">Skills Used:</h1>
-
-            <ul className="text-lg md:text-xl lg:text-2xl font-mono" style={{ listStyleType: 'square', paddingLeft: '20px' }}>
+        <div className="experience-card relative p-6 bg-white/80 backdrop-blur-lg rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1">
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-t-2xl"></div>
+            <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-2">{experience.name}</h2>
+            <p className="text-lg sm:text-xl font-semibold text-blue-600">{experience.role}</p>
+            <p className="text-sm sm:text-base text-gray-500 italic mb-4">{experience.duration}</p>
+            <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4">{experience.description}</p>
+            <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-2">Skills Used:</h3>
+            <ul className="flex flex-wrap gap-2">
                 {experience.skills.map((skill, index) => (
-                    <li key={index}>{skill}</li>
+                    <li
+                        key={index}
+                        className="px-3 py-1 bg-blue-100 text-blue-800 text-sm sm:text-base rounded-full"
+                    >
+                        {skill}
+                    </li>
                 ))}
             </ul>
         </div>

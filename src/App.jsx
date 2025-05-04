@@ -12,9 +12,9 @@ function App() {
   return (
     <>
       <Home />
+      <Experience />
       <Projects />
       <Skills />
-      <Experience />
       <About />
       <Footer />
 
