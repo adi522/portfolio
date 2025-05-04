@@ -26,8 +26,8 @@ function Footer() {
                 setCopied(true);
                 setTimeout(() => setCopied(false), 2000);
             },
-            color: 'bg-red-500 text-white',
-            gradient: 'from-red-500 to-red-600'
+            color: 'bg-blue-600 text-white',
+            gradient: 'from-blue-500 to-blue-700'
         },
         {
             id: 'phone',
@@ -43,8 +43,8 @@ function Footer() {
             icon: <FaGithub />,
             label: 'GitHub',
             url: 'https://github.com/adi522',
-            color: 'bg-gray-900 text-white',
-            gradient: 'from-gray-800 to-gray-950'
+            color: 'bg-blue-600 text-white',
+            gradient: 'from-blue-500 to-blue-700'
         },
 
     ];
